@@ -1,5 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { App } from "./App";
+import { store } from "./store";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
 
-ReactDOM.render(<App></App>, document.querySelector("#root"));
+ReactDOM.render(
+  <Provider store={store}>
+    <App></App>
+  </Provider>,
+  document.querySelector("#root")
+);
