@@ -1,10 +1,10 @@
 import "./news-feed.scss";
+import { useEffect } from "react";
 import { connect } from "react-redux";
 import { RootState } from "../../../../store";
 import { getNews } from "../../store/feed.thunks";
 import { FeedModuleState, News } from "../../store/feed.interfaces";
 import { AppThunkDispatch } from "../../../../store/store.types";
-import { useEffect } from "react";
 import { Topic } from "../../components/topic/topic";
 
 interface Props {
@@ -22,7 +22,7 @@ function NewsFeed({ news, getNews }: Props) {
   }, [getNews]);
 
   return (
-    <section>
+    <section className="news-feed">
       <h1>News feed</h1>
       <hr />
       {news.length ? renderNews(news) : null}

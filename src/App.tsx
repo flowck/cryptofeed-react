@@ -1,3 +1,4 @@
+import "./common/styles/main.scss";
 import NewsFeed from "./modules/feed/views/news-feed/news-feed";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 

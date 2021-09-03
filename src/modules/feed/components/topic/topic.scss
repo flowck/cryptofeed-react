@@ -1,0 +1,48 @@
+.topic {
+  color: #333;
+  padding: 15px;
+  font-size: 14px;
+  position: relative;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.05);
+
+  &:not(:last-child)::before {
+    content: "";
+    width: 10px;
+    height: 20px;
+    bottom: -20px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  &__header {
+    img {
+      margin-right: 10px;
+    }
+
+    span {
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  &__content {
+    margin: 0;
+    padding: 0;
+    margin: 20px 0;
+    line-height: 1.5;
+  }
+
+  &__footer {
+    color: #999;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-family: var(--font-bold);
+
+    span {
+      margin-right: 10px;
+    }
+  }
+}
