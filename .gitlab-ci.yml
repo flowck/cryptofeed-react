@@ -10,6 +10,7 @@ stages:
 
 # Setup jobs
 install-dependencies:
+  image: andreysenov/node-gyp
   stage: setup
   script:
     - npm ci
