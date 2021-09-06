@@ -1,6 +1,31 @@
 export interface FeedModuleState {
   news: News[];
+  categories: Category[];
+  resources: Resource[];
 }
+
+export interface Resource {
+  name: string;
+  label: string;
+}
+
+export interface Category {
+  name: string;
+  label: string;
+}
+
+export interface ProjectS {
+  id: string;
+  name: string;
+  type: ProjectType;
+}
+
+enum PROJECT_TYPE {
+  COINS = "COINS",
+  EXCHANGES = "EXCHANGES",
+}
+
+type ProjectType = PROJECT_TYPE.COINS | PROJECT_TYPE.EXCHANGES;
 
 export interface News {
   description: string;

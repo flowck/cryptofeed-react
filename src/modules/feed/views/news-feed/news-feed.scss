@@ -1,4 +1,11 @@
 .news-feed {
   width: 80%;
   margin: 0 auto;
+
+  &__filters {
+    margin: 20px 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
 }
