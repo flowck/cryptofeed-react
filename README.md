@@ -1,6 +1,6 @@
 # cryptofeed
 
-Update about Crypocurrency and other blockchain projects
+Update about Cryptocurrency and other blockchain projects
 
 ## Environments
 
